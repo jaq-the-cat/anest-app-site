@@ -72,14 +72,14 @@ main .card {
 }
 
 main .card h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000a;
     border-bottom: 1px solid #000a;
     margin-bottom: 0.75rem;
 }
 
 main .card p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .material-icons, .material-icons-outlined {
