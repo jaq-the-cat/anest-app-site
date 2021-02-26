@@ -6,6 +6,7 @@
     border: 0;
     font-weight: normal;
     text-decoration: none;
+    color: #121212;
 }
 
 /* 
@@ -50,7 +51,7 @@ header #to-main:hover {
  */
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template:
         1fr 1fr / 1fr 1fr;
@@ -60,9 +61,34 @@ main {
 }
 
 main .card {
-    box-shadow: 2px 2px 4px 4px #0004;
+    /*box-shadow: 2px 2px 4px 4px #0004;*/
+    border: 1px solid #0004;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+main .card h3 {
+    font-size: 1.5rem;
+    color: #000a;
+    border-bottom: 1px solid #000a;
+    margin-bottom: 0.75rem;
+}
+
+main .card p {
+    font-size: 1rem;
 }
 
 .material-icons, .material-icons-outlined {
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
