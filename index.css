@@ -55,9 +55,24 @@ main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     row-gap: 3rem;
     padding: 3rem;
+}
+
+#first-bit {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    column-gap: 5rem;
+    padding: 5rem;
+}
+
+#first-bit #pics {
+    display: inline-block;
+}
+
+#first-bit img {
+    height: 80%;
 }
 
 .material-icons, .material-icons-outlined {
