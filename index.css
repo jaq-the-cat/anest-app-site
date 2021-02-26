@@ -66,28 +66,33 @@ main {
     align-items: center;
 }
 
-#first-bit #pics {
+#pics {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
 
-#first-bit #pics :first-child {
+#pics :first-child {
     position: relative;
-    transform: translate(120px, 10px);
+    transform: translate(120px, 0);
     opacity: 0.8;
     z-index: -1;
 }
 
-#first-bit #pics :last-child {
+#pics :nth-child(2) {
+    max-width: unset;
+    width: calc(120% / 3)!important;
+}
+
+#pics :last-child {
     position: relative;
-    transform: translate(-120px, 10px);
+    transform: translate(-120px, 0);
     opacity: 0.8;
     z-index: -1;
 }
 
-#first-bit img {
+#pics img {
     max-width: calc(110% / 3);
     display: inline-block;
 }
