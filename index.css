@@ -117,6 +117,12 @@ footer ul {
     column-gap: 2rem;
 }
 
+@media only screen and (max-width: 700px) {
+    footer ul {
+        flex-direction: column;
+    }
+}
+
 
 /* 
  *
@@ -142,7 +148,6 @@ footer ul {
     }
 
     footer ul {
-        flex-direction: column;
         row-gap: 1rem;
     }
 
