@@ -53,45 +53,15 @@ header #to-main:hover {
 
 main {
     min-height: 100vh;
-    display: grid;
-    grid-template:
-        1fr 1fr / 1fr 1fr;
-    row-gap: 3rem;
-    column-gap: 3rem;
-    padding: 3rem;
-}
-
-main .card {
-    /*box-shadow: 2px 2px 4px 4px #0004;*/
-    border: 1px solid #0004;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem;
-}
-
-main .card h3 {
-    font-size: 2rem;
-    color: #000a;
-    border-bottom: 1px solid #000a;
-    margin-bottom: 0.75rem;
-}
-
-main .card p {
-    font-size: 1.2rem;
+    justify-content: space-evenly;
+    row-gap: 3rem;
+    padding: 3rem;
 }
 
 .material-icons, .material-icons-outlined {
     vertical-align: middle;
-}
-
-@media only screen and (max-width: 700px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
 }
 
 /* 
@@ -133,18 +103,6 @@ footer ul {
 @media only screen and (max-width: 700px) {
     header h1 {
         font-size: 8rem;
-    }
-
-    main .card {
-        padding: 0.5rem;
-    }
-
-    main .card h3 {
-        font-size: 2.5rem;
-    }
-
-    main .card p {
-        font-size: 1.5rem;
     }
 
     footer ul {
