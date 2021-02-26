@@ -98,6 +98,10 @@ main {
 }
 
 @media only screen and (max-width: 1200px) {
+    #first-bit {
+        align-items: flex-start;
+    }
+
     #pics {
         display: none;
     }
