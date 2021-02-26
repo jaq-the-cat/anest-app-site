@@ -5,20 +5,54 @@
     padding: 0;
     border: 0;
     font-weight: normal;
+    text-decoration: none;
 }
+
+/* 
+ *
+ * Header
+ *
+ */
 
 header {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 header h1 {
+    margin-top: auto;
     font-size: 10rem;
 }
 
 header small {
     font-size: 1.5rem;
+    margin-bottom: auto;
+}
+
+header #to-main {
+    color: black;
+    font-size: 5rem;
+    justify-self: flex-end;
+    transition: opacity 0.1s ease-in-out;
+}
+
+header #to-main:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* 
+ *
+ * Main
+ *
+ */
+
+main {
+    height: 100vh;
+}
+
+.material-icons, .material-icons-outlined {
+    vertical-align: middle;
 }
