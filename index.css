@@ -7,7 +7,7 @@
     font-weight: normal;
     text-decoration: none;
     list-style: none;
-    color: #000c;
+    color: #000b;
 }
 
 /* 
@@ -60,19 +60,42 @@ main {
 }
 
 #first-bit {
+    min-height: 100vh;
     display: flex;
-    height: 100vh;
-    flex-direction: row;
-    column-gap: 5rem;
-    padding: 5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 #first-bit #pics {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#first-bit #pics :first-child {
+    position: relative;
+    transform: translate(120px, 10px);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#first-bit #pics :last-child {
+    position: relative;
+    transform: translate(-120px, 10px);
+    opacity: 0.8;
+    z-index: -1;
 }
 
 #first-bit img {
-    height: 80%;
+    max-width: calc(110% / 3);
+    display: inline-block;
+}
+
+#first-bit p {
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .material-icons, .material-icons-outlined {
