@@ -6,7 +6,8 @@
     border: 0;
     font-weight: normal;
     text-decoration: none;
-    color: #121212;
+    list-style: none;
+    color: #000c;
 }
 
 /* 
@@ -91,4 +92,27 @@ main .card p {
         flex-direction: column;
         justify-content: space-evenly;
     }
+}
+
+/* 
+ *
+ * Footer
+ *
+ */
+
+footer {
+    padding: 2rem;
+    background-color: #000d;
+}
+
+footer * {
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
 }
